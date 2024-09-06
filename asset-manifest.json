@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NixFester/aplikasi-bendahara/static/css/main.9be4cbf8.css",
+    "main.js": "/NixFester/aplikasi-bendahara/static/js/main.a076d559.js",
+    "static/js/453.48714bcf.chunk.js": "/NixFester/aplikasi-bendahara/static/js/453.48714bcf.chunk.js",
+    "index.html": "/NixFester/aplikasi-bendahara/index.html",
+    "main.9be4cbf8.css.map": "/NixFester/aplikasi-bendahara/static/css/main.9be4cbf8.css.map",
+    "main.a076d559.js.map": "/NixFester/aplikasi-bendahara/static/js/main.a076d559.js.map",
+    "453.48714bcf.chunk.js.map": "/NixFester/aplikasi-bendahara/static/js/453.48714bcf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9be4cbf8.css",
+    "static/js/main.a076d559.js"
+  ]
+}
