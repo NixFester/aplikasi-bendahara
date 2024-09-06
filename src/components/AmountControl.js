@@ -10,8 +10,8 @@ const AmountControl = ({ amount, setAmount }) => {
   }
 
   const handlecNum = (value, flag) => {
-    let currentNumber = value * multiplier;
-    const returnedNumber = flag?currentNumber + amount: currentNumber - amount;
+    const currentNumber = value * multiplier;
+    const returnedNumber = flag? currentNumber + amount: amount- currentNumber;
     setAmount(returnedNumber);
   }
   

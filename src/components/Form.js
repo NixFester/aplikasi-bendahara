@@ -11,14 +11,21 @@ const Form = () => {
   const [amount, setAmount] = useState(0); // Amount state managed by AmountControl
   const [date, setDate] = useState(new Date());
   const [funds, setFunds] = useState(0);
+  const [password,setPassword] = useState("");
+  const [dataPass,setDataPass] = useState("");
 
   useEffect(() => {
     // Fetch current balance
     const fetchBalance = async () => {
       const balanceRef = doc(db, "Balance", "balance");
+      const passRef = doc(db,"password","sekarang");
+      const passDoc = await getDoc(passRef);
       const balanceDoc = await getDoc(balanceRef);
       if (balanceDoc.exists()) {
         setFunds(balanceDoc.data().funds);
+      }
+      if (passDoc.exists()){
+        setDataPass(passDoc.data().pass);
       }
     };
     fetchBalance();
@@ -26,6 +33,10 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (password !== dataPass) {
+      alert("password salah")
+      return
+    }
     const newTransaction = {
       perihal: description,
       nominal: Number(amount),
@@ -87,8 +98,17 @@ const Form = () => {
       {/* Include the new AmountControl component */}
       <AmountControl amount={amount} setAmount={setAmount} />
 
-      <button type="submit">Submit</button>
       <p>Current Funds: {funds}</p>
+      <div>
+        <label>Password:</label>
+        <input
+          type="text"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+      </div>
+      <button type="submit">Submit</button>
     </form>
   );
 };
