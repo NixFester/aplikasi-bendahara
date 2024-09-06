@@ -1,0 +1,59 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .app {
+      padding: 10px;
+    }
+  
+    .transaction-form input,
+    .transaction-form button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Transaction form styles */
+  .transaction-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .transaction-form input,
+  .transaction-form button {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .transaction-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .transaction-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Transaction list styles */
+  .transaction-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .transaction-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  

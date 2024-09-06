@@ -1,0 +1,10 @@
+/* TransactionForm.css */
+.transaction-form input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .transaction-form button {
+    border-radius: 4px;
+  }
+  
