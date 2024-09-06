@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/NixFester/aplikasi-bendahara/static/css/main.9be4cbf8.css",
-    "main.js": "/NixFester/aplikasi-bendahara/static/js/main.4f0bc72e.js",
-    "static/js/453.48714bcf.chunk.js": "/NixFester/aplikasi-bendahara/static/js/453.48714bcf.chunk.js",
-    "index.html": "/NixFester/aplikasi-bendahara/index.html",
-    "main.9be4cbf8.css.map": "/NixFester/aplikasi-bendahara/static/css/main.9be4cbf8.css.map",
-    "main.4f0bc72e.js.map": "/NixFester/aplikasi-bendahara/static/js/main.4f0bc72e.js.map",
-    "453.48714bcf.chunk.js.map": "/NixFester/aplikasi-bendahara/static/js/453.48714bcf.chunk.js.map"
+    "main.css": "/aplikasi-bendahara/static/css/main.9be4cbf8.css",
+    "main.js": "/aplikasi-bendahara/static/js/main.d0da471a.js",
+    "static/js/453.48714bcf.chunk.js": "/aplikasi-bendahara/static/js/453.48714bcf.chunk.js",
+    "index.html": "/aplikasi-bendahara/index.html",
+    "main.9be4cbf8.css.map": "/aplikasi-bendahara/static/css/main.9be4cbf8.css.map",
+    "main.d0da471a.js.map": "/aplikasi-bendahara/static/js/main.d0da471a.js.map",
+    "453.48714bcf.chunk.js.map": "/aplikasi-bendahara/static/js/453.48714bcf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9be4cbf8.css",
-    "static/js/main.4f0bc72e.js"
+    "static/js/main.d0da471a.js"
   ]
 }
