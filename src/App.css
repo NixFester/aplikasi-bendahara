@@ -149,3 +149,55 @@ p {
   font-weight: bold;
   color: #333;
 }
+
+/* Table Container */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* Table Header Styling */
+thead th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Table Row Styling */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Table Cell Styling */
+td, th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+/* Number column alignment */
+td:first-child, th:first-child {
+  text-align: center;
+  width: 50px;
+}
+
+.buttonfield {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds space between the buttons */
+  margin-top: 20px;
+}
+
+.buttonfield button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
