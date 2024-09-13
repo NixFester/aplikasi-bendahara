@@ -58,7 +58,7 @@ const FirebaseTable = ({ collectionName }) => {
               </tr>
             ))}
             <tr>
-              <td colSpan="4" style={{ textAlign: "right", fontWeight: "bold" }}>
+              <td colSpan="4" style={{ textAlign: "center", fontWeight: "bold" }}>
                 Total Nominal: {numberWithCommas(data[monthYear].reduce((acc, doc) => acc + doc.nominal, 0))}
               </td>
             </tr>
