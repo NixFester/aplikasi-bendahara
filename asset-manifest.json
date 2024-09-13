@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/aplikasi-bendahara/static/css/main.78f40177.css",
-    "main.js": "/aplikasi-bendahara/static/js/main.036a1700.js",
+    "main.css": "/aplikasi-bendahara/static/css/main.b8b7d246.css",
+    "main.js": "/aplikasi-bendahara/static/js/main.572511c7.js",
     "static/js/453.48714bcf.chunk.js": "/aplikasi-bendahara/static/js/453.48714bcf.chunk.js",
     "index.html": "/aplikasi-bendahara/index.html",
-    "main.78f40177.css.map": "/aplikasi-bendahara/static/css/main.78f40177.css.map",
-    "main.036a1700.js.map": "/aplikasi-bendahara/static/js/main.036a1700.js.map",
+    "main.b8b7d246.css.map": "/aplikasi-bendahara/static/css/main.b8b7d246.css.map",
+    "main.572511c7.js.map": "/aplikasi-bendahara/static/js/main.572511c7.js.map",
     "453.48714bcf.chunk.js.map": "/aplikasi-bendahara/static/js/453.48714bcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78f40177.css",
-    "static/js/main.036a1700.js"
+    "static/css/main.b8b7d246.css",
+    "static/js/main.572511c7.js"
   ]
 }
