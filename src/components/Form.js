@@ -4,6 +4,7 @@ import { db, doc, getDoc, updateDoc, collection, addDoc } from "../firebase";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import AmountControl from "./AmountControl";
+import { numberWithCommas } from "../fungsi/kumpulanFungsi";
 
 const Form = () => {
   const [category, setCategory] = useState("income");
@@ -21,6 +22,7 @@ const Form = () => {
       const passRef = doc(db,"password","sekarang");
       const passDoc = await getDoc(passRef);
       const balanceDoc = await getDoc(balanceRef);
+
       if (balanceDoc.exists()) {
         setFunds(balanceDoc.data().funds);
       }
@@ -73,15 +75,15 @@ const Form = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label>Category:</label>
+        <label>Kategori:</label>
         <select value={category} onChange={(e) => setCategory(e.target.value)}>
-          <option value="income">Income</option>
-          <option value="outcome">Outcome</option>
+          <option value="income">Pemasukan</option>
+          <option value="outcome">Pengeluaran</option>
         </select>
       </div>
 
       <div>
-        <label>Description:</label>
+        <label>Deskripsi:</label>
         <input
           type="text"
           value={description}
@@ -91,14 +93,14 @@ const Form = () => {
       </div>
 
       <div>
-        <label>Date:</label>
+        <label>Tanggal:</label>
         <DatePicker selected={date} onChange={(date) => setDate(date)} />
       </div>
 
       {/* Include the new AmountControl component */}
       <AmountControl amount={amount} setAmount={setAmount} />
 
-      <p>Current Funds: {funds}</p>
+      <p>Uang Kas: {numberWithCommas(funds)}</p>
       <div>
         <label>Password:</label>
         <input
