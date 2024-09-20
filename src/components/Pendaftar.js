@@ -70,7 +70,8 @@ function Pendaftar() {
         nama: "",
         programStudi: "",
         semester: 0,
-        noHpWa: ""
+        noHpWa: "",
+        npm:""
       });
       namaInputRef.current.focus(); // Set focus back to "nama" input
     } catch (error) {
@@ -135,6 +136,12 @@ function Pendaftar() {
             value={newPendaftar.noHpWa}
             onChange={(e) => setNewPendaftar({ ...newPendaftar, noHpWa: e.target.value })}
           />
+          <input
+            type="text"
+            placeholder="NPM"
+            value={newPendaftar.npm}
+            onChange={(e) => setNewPendaftar({ ...newPendaftar, npm: e.target.value })}
+          />
           <button type="submit">Submit</button>
         </form>
       )}
@@ -147,7 +154,8 @@ function Pendaftar() {
             <th>Program Studi</th>
             <th>Semester</th>
             <th>No. HP/WA</th>
-            <th>Actions</th>
+            <th>NPM</th>
+            <th>Edit</th>
           </tr>
         </thead>
         <tbody>
@@ -220,6 +228,23 @@ function Pendaftar() {
                   />
                 ) : (
                   p.noHpWa
+                )}
+              </td>
+              <td>
+                {editableRow === index ? (
+                  <input
+                    type="text"
+                    value={p.npm}
+                    onChange={(e) =>
+                      setPendaftar((prev) =>
+                        prev.map((item, i) =>
+                          i === index ? { ...item, npm: e.target.value } : item
+                        )
+                      )
+                    }
+                  />
+                ) : (
+                  p.npm
                 )}
               </td>
               <td>
